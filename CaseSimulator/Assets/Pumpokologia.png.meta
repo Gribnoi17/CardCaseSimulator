@@ -1,0 +1,953 @@
+fileFormatVersion: 2
+guid: b54b6a13dbe411b49a66e0aa0a9011da
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5118670439967438153
+    second: Pumpokologia_0
+  - first:
+      213: 2711668667321548598
+    second: Pumpokologia_1
+  - first:
+      213: 8186913343064318799
+    second: Pumpokologia_2
+  - first:
+      213: 7022096065953046119
+    second: Pumpokologia_3
+  - first:
+      213: -5516752072444966875
+    second: Pumpokologia_4
+  - first:
+      213: -1550954672369005492
+    second: Pumpokologia_5
+  - first:
+      213: 6751863655119202530
+    second: Pumpokologia_6
+  - first:
+      213: -5411738289977818314
+    second: Pumpokologia_7
+  - first:
+      213: -2051810948471470290
+    second: Pumpokologia_8
+  - first:
+      213: -3161604732985275865
+    second: Pumpokologia_9
+  - first:
+      213: -6422061828640867172
+    second: Pumpokologia_10
+  - first:
+      213: 3998547213468582919
+    second: Pumpokologia_11
+  - first:
+      213: 537099356877350952
+    second: Pumpokologia_12
+  - first:
+      213: -5470682083624444291
+    second: Pumpokologia_13
+  - first:
+      213: 1517145815805339582
+    second: Pumpokologia_14
+  - first:
+      213: 7767790092838735672
+    second: Pumpokologia_15
+  - first:
+      213: 6374059787880248993
+    second: Pumpokologia_16
+  - first:
+      213: 1134036358554176928
+    second: Pumpokologia_17
+  - first:
+      213: 8777719579107701529
+    second: Pumpokologia_18
+  - first:
+      213: -1912308693625969849
+    second: Pumpokologia_19
+  - first:
+      213: -9216952640147891464
+    second: Pumpokologia_20
+  - first:
+      213: 5808629397877091749
+    second: Pumpokologia_21
+  - first:
+      213: 6686612652899763882
+    second: Pumpokologia_22
+  - first:
+      213: -5108645006843112207
+    second: Pumpokologia_23
+  - first:
+      213: -4088193067109848140
+    second: Pumpokologia_24
+  - first:
+      213: -2302173687065209478
+    second: Pumpokologia_25
+  - first:
+      213: 4382242275205426130
+    second: Pumpokologia_26
+  - first:
+      213: -5454876209951304239
+    second: Pumpokologia_27
+  - first:
+      213: 1714557189656600111
+    second: Pumpokologia_28
+  - first:
+      213: 2542934897738893137
+    second: Pumpokologia_29
+  - first:
+      213: -5984891896488511306
+    second: Pumpokologia_30
+  - first:
+      213: -2309653115005291057
+    second: Pumpokologia_31
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pumpokologia_0
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 818
+        width: 87
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bac27fca54d6f8b0800000000000000
+      internalID: -5118670439967438153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_1
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 831
+        width: 102
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ff1403948c1a520800000000000000
+      internalID: 2711668667321548598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_2
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 830
+        width: 99
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4321443f42cd9170800000000000000
+      internalID: 8186913343064318799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_3
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 1006
+        width: 56
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e9cc5da2f737160800000000000000
+      internalID: 7022096065953046119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_4
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 574
+        width: 89
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5288408183f8073b0800000000000000
+      internalID: -5516752072444966875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_5
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 571
+        width: 110
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c86ba51f6e97ae0800000000000000
+      internalID: -1550954672369005492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_6
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 697
+        width: 114
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e8204fa83073bd50800000000000000
+      internalID: 6751863655119202530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_7
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 701
+        width: 113
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6330e78a2b4a5e4b0800000000000000
+      internalID: -5411738289977818314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_8
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 701
+        width: 114
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e27c91630d08683e0800000000000000
+      internalID: -2051810948471470290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_9
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 701
+        width: 114
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a083a0f39bf14d0800000000000000
+      internalID: -3161604732985275865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_10
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 758
+        width: 67
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9cf34adac040e6a0800000000000000
+      internalID: -6422061828640867172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_11
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 766
+        width: 114
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7044c646181bd7730800000000000000
+      internalID: 3998547213468582919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_12
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 775
+        width: 82
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828e3c7f409247700800000000000000
+      internalID: 537099356877350952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_13
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 633
+        width: 55
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e987e31ab3414b0800000000000000
+      internalID: -5470682083624444291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_14
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 472
+        width: 192
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb72c8fc41cfd0510800000000000000
+      internalID: 1517145815805339582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_15
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 472
+        width: 192
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f83751febbccb60800000000000000
+      internalID: 7767790092838735672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_16
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 472
+        width: 192
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a634b91b95357850800000000000000
+      internalID: 6374059787880248993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_17
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 472
+        width: 192
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0adcff94f08ecbf00800000000000000
+      internalID: 1134036358554176928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_18
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 519
+        width: 151
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913b4ba6379b0d970800000000000000
+      internalID: 8777719579107701529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_19
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 495
+        width: 71
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 743688fff5d1675e0800000000000000
+      internalID: -1912308693625969849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_20
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 527
+        width: 82
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fad264486ec61080800000000000000
+      internalID: -9216952640147891464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_21
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 363
+        width: 63
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5adea5479a56c9050800000000000000
+      internalID: 5808629397877091749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_22
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 353
+        width: 75
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa609b6d7ce9bcc50800000000000000
+      internalID: 6686612652899763882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_23
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 371
+        width: 94
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f41b8bde627a19b0800000000000000
+      internalID: -5108645006843112207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_24
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 70
+        width: 210
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bbe3bdc012d347c0800000000000000
+      internalID: -4088193067109848140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_25
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 70
+        width: 210
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a751a33aa390d00e0800000000000000
+      internalID: -2302173687065209478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_26
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 70
+        width: 210
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dba155912ad0dc30800000000000000
+      internalID: 4382242275205426130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_27
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 294
+        width: 90
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d59f1cfcf26c44b0800000000000000
+      internalID: -5454876209951304239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_28
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 299
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ed29c0ea45bc710800000000000000
+      internalID: 1714557189656600111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_29
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 289
+        width: 80
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 157cba201d15a4320800000000000000
+      internalID: 2542934897738893137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_30
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 23
+        width: 386
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b830ba878461fca0800000000000000
+      internalID: -5984891896488511306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pumpokologia_31
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 23
+        width: 386
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc53cbd9ab672ffd0800000000000000
+      internalID: -2309653115005291057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Pumpokologia_0: -5118670439967438153
+      Pumpokologia_1: 2711668667321548598
+      Pumpokologia_10: -6422061828640867172
+      Pumpokologia_11: 3998547213468582919
+      Pumpokologia_12: 537099356877350952
+      Pumpokologia_13: -5470682083624444291
+      Pumpokologia_14: 1517145815805339582
+      Pumpokologia_15: 7767790092838735672
+      Pumpokologia_16: 6374059787880248993
+      Pumpokologia_17: 1134036358554176928
+      Pumpokologia_18: 8777719579107701529
+      Pumpokologia_19: -1912308693625969849
+      Pumpokologia_2: 8186913343064318799
+      Pumpokologia_20: -9216952640147891464
+      Pumpokologia_21: 5808629397877091749
+      Pumpokologia_22: 6686612652899763882
+      Pumpokologia_23: -5108645006843112207
+      Pumpokologia_24: -4088193067109848140
+      Pumpokologia_25: -2302173687065209478
+      Pumpokologia_26: 4382242275205426130
+      Pumpokologia_27: -5454876209951304239
+      Pumpokologia_28: 1714557189656600111
+      Pumpokologia_29: 2542934897738893137
+      Pumpokologia_3: 7022096065953046119
+      Pumpokologia_30: -5984891896488511306
+      Pumpokologia_31: -2309653115005291057
+      Pumpokologia_4: -5516752072444966875
+      Pumpokologia_5: -1550954672369005492
+      Pumpokologia_6: 6751863655119202530
+      Pumpokologia_7: -5411738289977818314
+      Pumpokologia_8: -2051810948471470290
+      Pumpokologia_9: -3161604732985275865
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
