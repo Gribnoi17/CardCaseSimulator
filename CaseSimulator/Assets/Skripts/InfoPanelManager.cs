@@ -27,10 +27,11 @@ public class InfoPanelManager : MonoBehaviour
         if (isCardSales == true){ //проверка, есть ли возможность продавать
             panelQuantity.SetActive(true); //если есть возможность, то панель появляется при старте
             for (int i = 0; i < CardSales.Count; i++){ //нормальное отображение текста для продажи карт
-                CardSales[i].nameText.text = CardSales[i].name + " штуку";
+                if (i != 0)
+                    CardSales[i].nameText.text = CardSales[i].name + " карт";
                 for (int a = 0; a < CardSales[i].payment.Length; a++){
                     if (typeCard == MM.Items[a].typeCard){
-                        CardSales[i].salesNameText.text = "Вам выплятят: " + CardSales[i].payment[a];
+                        CardSales[i].salesNameText.text = "Вам выплятят: " + CardSales[i].payment[a] + "$";
                     }
                 }
             }

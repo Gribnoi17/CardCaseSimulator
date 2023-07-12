@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using YG;
 
 public class MenuManager : MonoBehaviour
 {
@@ -28,20 +29,30 @@ public class MenuManager : MonoBehaviour
 
     void Start()
     {
+        
         LoadGame();
 
         for (int i = 0; i < panelCase.Length; i++){ //введенная цена автоматически в начале игры подстраивается в свой текст
             if (panelCase[i].GetComponent<CaseManager>().price == 0){ //если цена не указана на кейсе, то он становится бесплатным
-                priceCase[i].text = "Free";
+                priceCase[i].text = "Бесплатно";
             }else{ //если цена указана, то текст выводит её в текст
                 priceCase[i].text = panelCase[i].GetComponent<CaseManager>().price + "$";
             }
         }
     }
 
+    private void OnEnable()
+    {
+        YandexGame.OpenVideoEvent += AddReward;
+    }
+    private void OnDestroy()
+    {
+        YandexGame.OpenVideoEvent -= AddReward;
+    }
+
     void Update()
     {
-        textMoney.text = "Money: " + money; //текст выводит количество монет
+        textMoney.text = "Деньги: " + money + "$"; //текст выводит количество монет
     }
 
     public void OpenCaseButton1() //при нажатии на кнопку первого кейса, будет происхоить спавн определённого кейса
@@ -134,7 +145,8 @@ public class MenuManager : MonoBehaviour
         panelCollection.SetActive(false);
     }
 
-    public void TakeLoan(){ //при нажатии начисляется 500 монет
+    public void AddReward(){ //при нажатии начисляется 500 монет
+        
         money += 500;
         PlayerPrefs.SetInt("money", money);
     }

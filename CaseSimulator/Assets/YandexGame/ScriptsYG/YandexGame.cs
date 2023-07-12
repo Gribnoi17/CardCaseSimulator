@@ -440,7 +440,7 @@ namespace YG
 #else
                 Message("Fullscren Ad");
                 OpenFullAd();
-                //CloseFullAdInEditor();
+                CloseFullAdInEditor();
 #endif
             }
             else Message($"До запроса к показу Fullscreen рекламы {(infoYG.fullscreenAdInterval - timerShowAd).ToString("00.0")} сек.");
@@ -449,20 +449,20 @@ namespace YG
         public static void FullscreenShow() => Instance._FullscreenShow();
 
 #if UNITY_EDITOR
-        //void CloseFullAdInEditor()
-        //{
-        //    GameObject errMessage = new GameObject { name = "TestFullAd" };
-        //    DontDestroyOnLoad(errMessage);
+        void CloseFullAdInEditor()
+        {
+            GameObject errMessage = new GameObject { name = "TestFullAd" };
+            DontDestroyOnLoad(errMessage);
 
-        //    Canvas canvas = errMessage.AddComponent<Canvas>();
-        //    canvas.sortingOrder = 32767;
-        //    canvas.renderMode = RenderMode.ScreenSpaceOverlay;
-        //    errMessage.AddComponent<GraphicRaycaster>();
-        //    errMessage.AddComponent<RawImage>().color = new Color(0, 1, 0, 0.5f);
+            Canvas canvas = errMessage.AddComponent<Canvas>();
+            canvas.sortingOrder = 32767;
+            canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+            errMessage.AddComponent<GraphicRaycaster>();
+            errMessage.AddComponent<RawImage>().color = new Color(0, 1, 0, 0.5f);
 
-        //    Insides.CallingAnEvent call = errMessage.AddComponent(typeof(Insides.CallingAnEvent)) as Insides.CallingAnEvent;
-        //    call.StartCoroutine(call.CallingAd(infoYG.durationOfAdSimulation));
-        //}
+            Insides.CallingAnEvent call = errMessage.AddComponent(typeof(Insides.CallingAnEvent)) as Insides.CallingAnEvent;
+            call.StartCoroutine(call.CallingAd(infoYG.durationOfAdSimulation));
+        }
 #endif
         #endregion Fullscren Ad Show
 
@@ -480,7 +480,7 @@ namespace YG
                 RewardedShow(id);
 #else
                 OpenVideo();
-                //CloseVideoInEditor(id);
+                CloseVideoInEditor(id);
 #endif
             }
         }
@@ -488,21 +488,21 @@ namespace YG
         public static void RewVideoShow(int id) => Instance._RewardedShow(id);
 
 #if UNITY_EDITOR
-        //void CloseVideoInEditor(int id)
-        //{
-        //    GameObject errMessage = new GameObject { name = "TestVideoAd" };
-        //    DontDestroyOnLoad(errMessage);
+        void CloseVideoInEditor(int id)
+        {
+            GameObject errMessage = new GameObject { name = "TestVideoAd" };
+            DontDestroyOnLoad(errMessage);
 
-        //    Canvas canvas = errMessage.AddComponent<Canvas>();
-        //    canvas.sortingOrder = 32767;
-        //    canvas.renderMode = RenderMode.ScreenSpaceOverlay;
-        //    errMessage.AddComponent<GraphicRaycaster>();
-        //    errMessage.AddComponent<RawImage>().color = new Color(0, 0, 1, 0.5f);
-        //    DontDestroyOnLoad(errMessage);
+            Canvas canvas = errMessage.AddComponent<Canvas>();
+            canvas.sortingOrder = 32767;
+            canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+            errMessage.AddComponent<GraphicRaycaster>();
+            errMessage.AddComponent<RawImage>().color = new Color(0, 0, 1, 0.5f);
+            DontDestroyOnLoad(errMessage);
 
-        //    Insides.CallingAnEvent call = errMessage.AddComponent(typeof(Insides.CallingAnEvent)) as Insides.CallingAnEvent;
-        //    call.StartCoroutine(call.CallingAd(infoYG.durationOfAdSimulation, id));
-        //}
+            Insides.CallingAnEvent call = errMessage.AddComponent(typeof(Insides.CallingAnEvent)) as Insides.CallingAnEvent;
+            call.StartCoroutine(call.CallingAd(infoYG.durationOfAdSimulation, id));
+        }
 #endif
         #endregion Rewarded Video Show
 

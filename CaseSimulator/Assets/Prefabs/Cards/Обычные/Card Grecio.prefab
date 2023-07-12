@@ -79,7 +79,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Grecio
+  m_Text: "\u0413\u0440\u0435\u0446\u0438\u043E"
 --- !u!1 &1790271805453017997
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,7 +116,7 @@ RectTransform:
   - {fileID: 2886082923609728149}
   - {fileID: 6226161832253462614}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -173,11 +173,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27a99ef961cc50e4b9ed164d86531627, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameCard: Grecio
+  nameCard: "\u0413\u0440\u0435\u0446\u0438\u043E"
   typeCard: "\u041E\u0431\u044B\u0447\u043D\u0430\u044F"
   number: 3
   description: "\u042D\u0442\u043E\u0442 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u0436
-    \u043F\u0440\u043C\u0431\u044B\u043B \u043A \u043D\u0430\u043C \u043F\u0440\u044F\u043C\u0438\u043A\u043E\u043C
+    \u043F\u0440\u0438\u0431\u044B\u043B \u043A \u043D\u0430\u043C \u043F\u0440\u044F\u043C\u0438\u043A\u043E\u043C
     \u0438\u0437 \u0413\u0440\u0435\u0446\u0438\u0438"
   nameText: {fileID: 4181630757803273246}
   quantityText: {fileID: 5519973080171314039}
@@ -473,7 +473,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Info
+  m_Text: "\u0418\u043D\u0444\u043E"
 --- !u!1 &6554577323421532590
 GameObject:
   m_ObjectHideFlags: 0

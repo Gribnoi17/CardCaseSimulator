@@ -79,7 +79,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Info
+  m_Text: "\u0418\u043D\u0444\u043E\n"
 --- !u!1 &3810821388973153226
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,7 +315,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Grisha
+  m_Text: "\u0413\u0440\u0438\u0448\u0430"
 --- !u!1 &8048773495699148447
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,7 +486,7 @@ RectTransform:
   - {fileID: 6659282574433901495}
   - {fileID: 3897369856914864412}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -543,7 +543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27a99ef961cc50e4b9ed164d86531627, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameCard: Grisha
+  nameCard: "\u0413\u0440\u0438\u0448\u0430"
   typeCard: "\u041E\u0431\u044B\u0447\u043D\u0430\u044F"
   number: 4
   description: "\u0415\u0433\u043E \u0438\u043C\u044F \u0413\u0440\u0438\u0448\u0430,

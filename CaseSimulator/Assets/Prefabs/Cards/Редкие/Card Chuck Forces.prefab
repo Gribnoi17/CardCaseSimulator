@@ -289,7 +289,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Punk Hoy
+  m_Text: "\u0411\u043E\u043B\u044C\u0448\u043E\u0439 \u0441\u0442\u0432\u043E\u043B"
 --- !u!1 &5717883244878092743
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,7 +326,7 @@ RectTransform:
   - {fileID: 6997156553910001629}
   - {fileID: 4117023617062829853}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -383,7 +383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27a99ef961cc50e4b9ed164d86531627, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameCard: Chuck Force
+  nameCard: "\u0411\u043E\u043B\u044C\u0448\u043E\u0439 \u0441\u0442\u0432\u043E\u043B"
   typeCard: "\u0420\u0435\u0434\u043A\u0430\u044F"
   number: 0
   description: "\u041D\u0430\u0441\u0442\u043E\u044F\u0449\u0438\u0439 \u043A\u043E\u0432\u0431\u043E\u0439!"
@@ -471,7 +471,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Info
+  m_Text: "\u0418\u043D\u0444\u043E"
 --- !u!1 &7711826044360391520
 GameObject:
   m_ObjectHideFlags: 0

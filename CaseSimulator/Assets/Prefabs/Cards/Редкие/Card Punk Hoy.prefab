@@ -112,7 +112,7 @@ RectTransform:
   - {fileID: 1509818810691506889}
   - {fileID: 2900682298216207333}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27a99ef961cc50e4b9ed164d86531627, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameCard: Punk Hoy
+  nameCard: "\u0413\u043B\u0430\u0432\u0430 \u043F\u0430\u043D\u043A\u043E\u0432"
   typeCard: "\u0420\u0435\u0434\u043A\u0430\u044F"
   number: 5
   description: "\u041F\u0430\u043D\u043A\u0443 \u043F\u0440\u043E\u0441\u0442\u043E
@@ -339,7 +339,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Punk Hoy
+  m_Text: "\u0413\u043B\u0430\u0432\u0430 \u043F\u0430\u043D\u043A\u043E\u0432"
 --- !u!1 &8340219661888332303
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,4 +553,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Info
+  m_Text: "\u0418\u043D\u0444\u043E"

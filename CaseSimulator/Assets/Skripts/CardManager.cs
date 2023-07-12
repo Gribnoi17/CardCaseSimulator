@@ -37,7 +37,7 @@ public class CardManager : MonoBehaviour
             if (GameObject.FindGameObjectWithTag("Case") != null){ //если открывается кейс, то тогда:
                 if (typeCard == MM.Items[i].typeCard){
                     if (MM.Items[i].quantity[number] <= 1){ //если он открывется первый раз, то выводится надпись нью (новая карта)
-                        quantityText.text = "new";
+                        quantityText.text = "новая";
                     }else if (MM.Items[i].quantity[number] > 1){ //если больше одного то выводится в текст +1
                         quantityText.text = "+1";
                     }

@@ -79,7 +79,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Info
+  m_Text: "\u0418\u043D\u0444\u043E"
 --- !u!1 &2839768318768093524
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,7 +369,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Punk Hoy
+  m_Text: "\u0414\u0436\u043E\u0439 \u0422\u0435\u043C\u043F\u0435\u0441\u0442"
 --- !u!1 &6651861230626293069
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,7 +486,7 @@ RectTransform:
   - {fileID: 7782217492353079189}
   - {fileID: 4075432873702459475}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -543,7 +543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27a99ef961cc50e4b9ed164d86531627, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameCard: Joey Tempest
+  nameCard: "\u0414\u0436\u043E\u0439 \u0422\u0435\u043C\u043F\u0435\u0441\u0442"
   typeCard: "\u0420\u0435\u0434\u043A\u0430\u044F"
   number: 2
   description: "\u041D\u0430\u0432\u0435\u0440\u043D\u043E \u043A\u0430\u0434\u044B\u0439

@@ -250,7 +250,7 @@ RectTransform:
   - {fileID: 5307380344132833605}
   - {fileID: 517335308427711686}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -307,7 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27a99ef961cc50e4b9ed164d86531627, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameCard: Vasiliy
+  nameCard: "\u0412\u0430\u0441\u0438\u043B\u0438\u0439"
   typeCard: "\u041E\u0431\u044B\u0447\u043D\u0430\u044F"
   number: 7
   description: "\u041E\u0431\u044B\u0447\u043D\u044B\u0439 \u0440\u0443\u0441\u0441\u043A\u0438\u0439
@@ -398,7 +398,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Info
+  m_Text: "\u0418\u043D\u0444\u043E"
 --- !u!1 &4766318195548954134
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,4 +554,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Punk Hoy
+  m_Text: "\u0412\u0430\u0441\u0438\u043B\u0438\u0439"

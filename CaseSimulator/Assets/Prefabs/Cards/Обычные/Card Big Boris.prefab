@@ -213,7 +213,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Punk Hoy
+  m_Text: "\u0411\u043E\u043B\u044C\u0448\u043E\u0439 \u0411\u043E\u0440\u0438\u0441"
 --- !u!1 &3103860246356194382
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,7 +250,7 @@ RectTransform:
   - {fileID: 6915334407947376006}
   - {fileID: 3461665761046683693}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -307,7 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27a99ef961cc50e4b9ed164d86531627, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameCard: Big Boris
+  nameCard: "\u0411\u043E\u043B\u044C\u0448\u043E\u0439 \u0411\u043E\u0440\u0438\u0441"
   typeCard: "\u041E\u0431\u044B\u0447\u043D\u0430\u044F"
   number: 0
   description: "\u0411\u043E\u043B\u044C\u0448\u043E\u0439 \u0438 \u0442\u043E\u043B\u0441\u0442\u044B\u0439"
@@ -395,7 +395,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Info
+  m_Text: "\u0418\u043D\u0444\u043E"
 --- !u!1 &6228092433029465371
 GameObject:
   m_ObjectHideFlags: 0
