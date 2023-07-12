@@ -62,7 +62,9 @@ public class MenuManager : MonoBehaviour
             CM = GameObject.FindGameObjectWithTag("Case").GetComponent<CaseManager>();
             money -= panelCase[0].GetComponent<CaseManager>().price;
             PlayerPrefs.SetInt("money", money);
-        }else{ //если нехватает денег, тогда появляется панель ошибки
+            EventManager.OnCaseOpened();
+        }
+        else{ //если нехватает денег, тогда появляется панель ошибки
             errorMessage.SetActive(true);
             Invoke("EnterMessageAnim", 2f);
         }
@@ -75,7 +77,9 @@ public class MenuManager : MonoBehaviour
             CM = GameObject.FindGameObjectWithTag("Case").GetComponent<CaseManager>();
             money -= panelCase[1].GetComponent<CaseManager>().price;
             PlayerPrefs.SetInt("money", money);
-        }else{ //если нехватает денег, тогда появляется панель ошибки
+            EventManager.OnCaseOpened();
+        }
+        else{ //если нехватает денег, тогда появляется панель ошибки
             errorMessage.SetActive(true);
             Invoke("EnterMessageAnim", 2f);
         }
@@ -88,7 +92,9 @@ public class MenuManager : MonoBehaviour
             CM = GameObject.FindGameObjectWithTag("Case").GetComponent<CaseManager>();
             money -= panelCase[2].GetComponent<CaseManager>().price;
             PlayerPrefs.SetInt("money", money);
-        }else{ //если нехватает денег, тогда появляется панель ошибки
+            EventManager.OnCaseOpened();
+        }
+        else{ //если нехватает денег, тогда появляется панель ошибки
             errorMessage.SetActive(true);
             Invoke("EnterMessageAnim", 2f);
         }
@@ -101,7 +107,9 @@ public class MenuManager : MonoBehaviour
             CM = GameObject.FindGameObjectWithTag("Case").GetComponent<CaseManager>();
             money -= panelCase[3].GetComponent<CaseManager>().price;
             PlayerPrefs.SetInt("money", money);
-        }else{ //если нехватает денег, тогда появляется панель ошибки
+            EventManager.OnCaseOpened();
+        }
+        else{ //если нехватает денег, тогда появляется панель ошибки
             errorMessage.SetActive(true);
             Invoke("EnterMessageAnim", 2f);
         }
@@ -125,13 +133,15 @@ public class MenuManager : MonoBehaviour
                 chance = 80;
                 break;
             case 4:
-                chance = 95;   
+                chance = 98;   
                 break;
         }
 
         if (allRandom >= chance){ //если рандом больше шанса, то тогда происходит спавн определённого кейса
             Instantiate(panelCase[randomCase], pointSpawnCase.transform.position, Quaternion.identity, pointSpawnCase.transform);
-        }else{ //в ином случае операци будет повторятся
+            EventManager.OnCaseOpened();
+        }
+        else{ //в ином случае операци будет повторятся
             RandomOpenCase();
         }
     }
@@ -147,7 +157,7 @@ public class MenuManager : MonoBehaviour
 
     public void AddReward(){ //при нажатии начисляется 500 монет
         
-        money += 500;
+        money += 1000;
         PlayerPrefs.SetInt("money", money);
     }
 
