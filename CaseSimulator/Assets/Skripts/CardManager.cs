@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
 public class CardManager : MonoBehaviour
@@ -9,11 +10,13 @@ public class CardManager : MonoBehaviour
     private InfoPanelManager IPM;
     private Transform card;
 
+
     [Header("Информация о карте")]
     public string nameCard; //название карты
     public string typeCard; //тип редкости карты
     public int number; //основной порядковый номер карты
     public string description;
+
 
     [Header("Вывод данных")]
     public Text nameText;
@@ -22,23 +25,35 @@ public class CardManager : MonoBehaviour
     public GameObject buttonInfo;
     public GameObject panelInfo;
 
+    private float time = 0;
+
     void Start()
     {
+
+ 
         MM = GameObject.FindGameObjectWithTag("MenuManager").GetComponent<MenuManager>();
         nameText.text = "" + nameCard; //вывод имени
         if (MM.isInfoCard == false){ //если выключена возможность открытия панели, то:
             buttonInfo.SetActive(false); //не будет кнопки, для того чтобы открыть
         }
+        
     }
+
 
     public void Update()
     {
+        if (time > 0f)
+        {
+            // Subtract the difference of the last time the method has been called
+            time -= Time.deltaTime;
+        }
         for (int i = 0; i < MM.Items.Count; i++){ //назначение карте количества
             if (GameObject.FindGameObjectWithTag("Case") != null){ //если открывается кейс, то тогда:
                 if (typeCard == MM.Items[i].typeCard){
                     if (MM.Items[i].quantity[number] <= 1){ //если он открывется первый раз, то выводится надпись нью (новая карта)
                         quantityText.text = "новая";
-                    }else if (MM.Items[i].quantity[number] > 1){ //если больше одного то выводится в текст +1
+                    }
+                    else if (MM.Items[i].quantity[number] > 1){ //если больше одного то выводится в текст +1
                         quantityText.text = "+1";
                     }
                 }
@@ -60,6 +75,8 @@ public class CardManager : MonoBehaviour
             }
         }
     }
+
+    
 
     public void ButtonPanel() //при нажатии на кнопку, будет:
     {

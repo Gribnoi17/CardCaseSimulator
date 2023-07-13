@@ -10,6 +10,11 @@ public class MenuManager : MonoBehaviour
     private CaseManager CM;
     public bool isInfoCard;
 
+    private int cardLevel1 = 0;
+    private int cardLevel2 = 0;
+    private int cardLevel3 = 0;
+    private int cardAll = 0;
+
     [Header("Переменные")]
     public int money;
     public Text textMoney;
@@ -26,10 +31,10 @@ public class MenuManager : MonoBehaviour
 
     [Header("Карты")]
     public List<Item> Items; //класс указанный в низу скрипта с данными колекции карт
+    public Text[] countCards;
 
     void Start()
     {
-        
         LoadGame();
 
         for (int i = 0; i < panelCase.Length; i++){ //введенная цена автоматически в начале игры подстраивается в свой текст
@@ -54,6 +59,7 @@ public class MenuManager : MonoBehaviour
     {
         textMoney.text = "Деньги: " + money + "$"; //текст выводит количество монет
     }
+
 
     public void OpenCaseButton1() //при нажатии на кнопку первого кейса, будет происхоить спавн определённого кейса
     {
@@ -123,19 +129,21 @@ public class MenuManager : MonoBehaviour
 
         switch(randomCase) //присвоение шанса определённым кейсам
         {
-            case 1:
+            case 0:
                 chance = 0;
                 break;
+            case 1:
+                chance = 70;
+                break;
             case 2:
-                chance = 50;
+                chance = 90;
                 break;
             case 3:
-                chance = 80;
-                break;
-            case 4:
-                chance = 98;   
+                chance = 95;   
                 break;
         }
+        print("randomCase: " + randomCase);
+        print("allRandom: " + allRandom);
 
         if (allRandom >= chance){ //если рандом больше шанса, то тогда происходит спавн определённого кейса
             Instantiate(panelCase[randomCase], pointSpawnCase.transform.position, Quaternion.identity, pointSpawnCase.transform);
@@ -146,11 +154,6 @@ public class MenuManager : MonoBehaviour
         }
     }
 
-
-    public void CollectionButton(){ //при нажатии открывается панель с коллекцией
-        panelCollection.SetActive(true);
-    }
-
     public void ExitCollectionButton(){ //при нажатии закрывается панель с коллекцией
         panelCollection.SetActive(false);
     }
@@ -159,6 +162,7 @@ public class MenuManager : MonoBehaviour
         
         money += 1000;
         PlayerPrefs.SetInt("money", money);
+        YandexGame.NewLeaderboardScores("LeaderBoard", money);
     }
 
     public void EnterMessageAnim(){ // анимация выключения панели с ошибкой
@@ -190,6 +194,12 @@ public class MenuManager : MonoBehaviour
                 }
             }
         }
+
+        cardLevel1 = PlayerPrefs.GetInt("cardLevel1");
+        cardLevel2 = PlayerPrefs.GetInt("cardLevel2");
+        cardLevel3 = PlayerPrefs.GetInt("cardLevel3");
+        cardAll = PlayerPrefs.GetInt("cardAll");
+        
     }
 
     public void DeleteSave() //удаление всех сохранений, достежений, карт и монет
@@ -203,6 +213,57 @@ public class MenuManager : MonoBehaviour
 
         PlayerPrefs.DeleteAll();
         SceneManager.LoadScene(0); //перезагрузка сцены, для корректного отображения всех нововедений
+    }
+    public void CollectionButton()
+    { //при нажатии открывается панель с коллекцией
+        panelCollection.SetActive(true);
+        for (int i = 0; i < Items.Count; i++)
+        {
+            if (Items[i].typeCard == "Обычная")
+            {
+                for (int j = 0; j < Items[i].quantity.Length; j++)
+                {
+                    if (Items[i].quantity[j] == 0)
+                    {
+                        cardLevel1++;
+                        //print("Level1: " + cardLeve1);
+                    }
+                }
+                countCards[0].text = "Обычных открыто " + ( 8 - cardLevel1 ) + "/8";
+                cardAll += cardLevel1;
+                cardLevel1 = 0;
+            }
+            if (Items[i].typeCard == "Редкая")
+            {
+                for (int j = 0; j < Items[i].quantity.Length; j++)
+                {
+                    if (Items[i].quantity[j] == 0)
+                    {
+                        cardLevel2++;
+                        //print("Level1: " + cardLeve1);
+                    }
+                }
+                countCards[1].text = "Редких открыто " + ( 7 - cardLevel2 ) + "/7";
+                cardAll += cardLevel2;
+                cardLevel2 = 0;
+            }
+            if (Items[i].typeCard == "Легендарная")
+            {
+                for (int j = 0; j < Items[i].quantity.Length; j++)
+                {
+                    if (Items[i].quantity[j] == 0)
+                    {
+                        cardLevel3++;
+                        
+                    }
+                }
+                countCards[2].text = "Легендарных открыто " + ( 3 - cardLevel3 ) + "/3";
+                cardAll += cardLevel3;
+                cardLevel3 = 0;
+            }
+        }
+        countCards[3].text = "Всего открыто " + ( 18 - cardAll ) + "/18";
+        cardAll = 0;
     }
 }
 

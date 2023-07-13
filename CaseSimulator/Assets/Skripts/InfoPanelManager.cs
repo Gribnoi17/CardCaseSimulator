@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using YG;
 
 public class InfoPanelManager : MonoBehaviour
 {
@@ -49,9 +50,11 @@ public class InfoPanelManager : MonoBehaviour
                     MM.Items[i].quantity[number] -= CardSales[0].name;
                     ExitPanelInfo();
                     MM.SaveGame();
+                    YandexGame.NewLeaderboardScores("LeaderBoard", MM.money);
                 }
             }
         }
+        
     }
 
     public void CardSalesChanged1(){ //функция отвечает за продажу десяти карт
@@ -63,6 +66,7 @@ public class InfoPanelManager : MonoBehaviour
                     MM.Items[i].quantity[number] -= CardSales[1].name;
                     ExitPanelInfo();
                     MM.SaveGame();
+                    YandexGame.NewLeaderboardScores("LeaderBoard", MM.money);
                 }
             }
         }
@@ -77,6 +81,7 @@ public class InfoPanelManager : MonoBehaviour
                     MM.Items[i].quantity[number] -= CardSales[2].name;
                     ExitPanelInfo();
                     MM.SaveGame();
+                    YandexGame.NewLeaderboardScores("LeaderBoard", MM.money);
                 }
             }
         }
