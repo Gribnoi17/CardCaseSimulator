@@ -54,6 +54,7 @@ public class InfoPanelManager : MonoBehaviour
                 }
             }
         }
+        MM.UpdateCardText();
         
     }
 
@@ -70,6 +71,7 @@ public class InfoPanelManager : MonoBehaviour
                 }
             }
         }
+        MM.UpdateCardText();
     }
 
     public void CardSalesChanged2(){
@@ -85,6 +87,7 @@ public class InfoPanelManager : MonoBehaviour
                 }
             }
         }
+        MM.UpdateCardText();
     }
 
     public void ExitPanelInfo(){ //закрытие панели с информацией карты

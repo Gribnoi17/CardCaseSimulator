@@ -14,6 +14,7 @@ public class MenuManager : MonoBehaviour
     private int cardLevel2 = 0;
     private int cardLevel3 = 0;
     private int cardAll = 0;
+    private bool canOpenRandomCase;
 
     [Header("Переменные")]
     public int money;
@@ -24,6 +25,8 @@ public class MenuManager : MonoBehaviour
     public Transform pointSpawnCollection; //это то место, в котором спавняться карты
     public Transform pointSpawnCase; //это то место, в котором спавняться кейсы
     public GameObject errorMessage; //это панель которая показывает что нехватает денег
+    public Image openRandomCaseImage; //это панель которая показывает что нехватает денег
+    public GameObject panelTeacher; //это панель которая показывает что нехватает денег
 
     [Header("Кейсы")]
     public Text[] priceCase; //текст выводящий стоимость кейса
@@ -36,7 +39,7 @@ public class MenuManager : MonoBehaviour
     void Start()
     {
         LoadGame();
-
+        canOpenRandomCase = true;
         for (int i = 0; i < panelCase.Length; i++){ //введенная цена автоматически в начале игры подстраивается в свой текст
             if (panelCase[i].GetComponent<CaseManager>().price == 0){ //если цена не указана на кейсе, то он становится бесплатным
                 priceCase[i].text = "Бесплатно";
@@ -123,39 +126,62 @@ public class MenuManager : MonoBehaviour
 
     public void RandomOpenCase() //при нажатии на кнопку рандомного кейса, будет происходить спавн рандомного кейса
     {
-        int chance = 0; //вводится переменная шанса
-        int randomCase = Random.Range(0, panelCase.Length); //количество кейсов
-        int allRandom = Random.Range(1, 101); //шанс выпадания
-
-        switch(randomCase) //присвоение шанса определённым кейсам
+        if (canOpenRandomCase == true)
         {
-            case 0:
-                chance = 0;
-                break;
-            case 1:
-                chance = 70;
-                break;
-            case 2:
-                chance = 90;
-                break;
-            case 3:
-                chance = 95;   
-                break;
-        }
-        print("randomCase: " + randomCase);
-        print("allRandom: " + allRandom);
+            int chance = 0; //вводится переменная шанса
+            int randomCase = Random.Range(0, panelCase.Length); //количество кейсов
+            int allRandom = Random.Range(1, 101); //шанс выпадания
 
-        if (allRandom >= chance){ //если рандом больше шанса, то тогда происходит спавн определённого кейса
-            Instantiate(panelCase[randomCase], pointSpawnCase.transform.position, Quaternion.identity, pointSpawnCase.transform);
-            EventManager.OnCaseOpened();
+            switch (randomCase) //присвоение шанса определённым кейсам
+            {
+                case 0:
+                    chance = 0;
+                    break;
+                case 1:
+                    chance = 70;
+                    break;
+                case 2:
+                    chance = 90;
+                    break;
+                case 3:
+                    chance = 95;
+                    break;
+            }
+            if (allRandom >= chance)
+            { //если рандом больше шанса, то тогда происходит спавн определённого кейса
+                Instantiate(panelCase[randomCase], pointSpawnCase.transform.position, Quaternion.identity, pointSpawnCase.transform);
+                EventManager.OnCaseOpened();
+            }
+            else
+            { //в ином случае операци будет повторятся
+                RandomOpenCase();
+            }
+            StartCoroutine(RandomCaseTimer(30));
         }
-        else{ //в ином случае операци будет повторятся
-            RandomOpenCase();
+    }
+
+    private IEnumerator RandomCaseTimer(float durationInSec)
+    {
+        canOpenRandomCase = false;
+        openRandomCaseImage.fillAmount = 0;
+        float timer = 0f;
+        while (timer < durationInSec)
+        {
+            timer += Time.deltaTime;
+            float currentFillAmount = Mathf.Lerp(0, 1, timer / durationInSec);
+            openRandomCaseImage.fillAmount = currentFillAmount;
+            yield return null;
         }
+        canOpenRandomCase = true;
     }
 
     public void ExitCollectionButton(){ //при нажатии закрывается панель с коллекцией
         panelCollection.SetActive(false);
+    }
+
+    public void ExitTeacherPanelButton()
+    { //при нажатии закрывается панель с коллекцией
+        panelTeacher.SetActive(false);
     }
 
     public void AddReward(){ //при нажатии начисляется 500 монет
@@ -214,9 +240,9 @@ public class MenuManager : MonoBehaviour
         PlayerPrefs.DeleteAll();
         SceneManager.LoadScene(0); //перезагрузка сцены, для корректного отображения всех нововедений
     }
-    public void CollectionButton()
-    { //при нажатии открывается панель с коллекцией
-        panelCollection.SetActive(true);
+
+    public void UpdateCardText()
+    {
         for (int i = 0; i < Items.Count; i++)
         {
             if (Items[i].typeCard == "Обычная")
@@ -229,7 +255,7 @@ public class MenuManager : MonoBehaviour
                         //print("Level1: " + cardLeve1);
                     }
                 }
-                countCards[0].text = "Обычных открыто " + ( 8 - cardLevel1 ) + "/8";
+                countCards[0].text = "Обычных открыто " + (8 - cardLevel1) + "/8";
                 cardAll += cardLevel1;
                 cardLevel1 = 0;
             }
@@ -243,7 +269,7 @@ public class MenuManager : MonoBehaviour
                         //print("Level1: " + cardLeve1);
                     }
                 }
-                countCards[1].text = "Редких открыто " + ( 7 - cardLevel2 ) + "/7";
+                countCards[1].text = "Редких открыто " + (7 - cardLevel2) + "/7";
                 cardAll += cardLevel2;
                 cardLevel2 = 0;
             }
@@ -254,16 +280,21 @@ public class MenuManager : MonoBehaviour
                     if (Items[i].quantity[j] == 0)
                     {
                         cardLevel3++;
-                        
+
                     }
                 }
-                countCards[2].text = "Легендарных открыто " + ( 3 - cardLevel3 ) + "/3";
+                countCards[2].text = "Легендарных открыто " + (3 - cardLevel3) + "/3";
                 cardAll += cardLevel3;
                 cardLevel3 = 0;
             }
         }
-        countCards[3].text = "Всего открыто " + ( 18 - cardAll ) + "/18";
+        countCards[3].text = "Всего открыто " + (18 - cardAll) + "/18";
         cardAll = 0;
+    }
+    public void CollectionButton()
+    { //при нажатии открывается панель с коллекцией
+        panelCollection.SetActive(true);
+        UpdateCardText();
     }
 }
 
