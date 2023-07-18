@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using YG;
+using TMPro;
 
 public class MenuManager : MonoBehaviour
 {
@@ -26,7 +27,9 @@ public class MenuManager : MonoBehaviour
     public Transform pointSpawnCase; //это то место, в котором спавняться кейсы
     public GameObject errorMessage; //это панель которая показывает что нехватает денег
     public Image openRandomCaseImage; //это панель которая показывает что нехватает денег
-    public GameObject panelTeacher; //это панель которая показывает что нехватает денег
+    public GameObject openRandomCaseText; //это панель которая показывает что нехватает денег
+    public GameObject panelTeacher; 
+    public GameObject panelMoney; 
 
     [Header("Кейсы")]
     public Text[] priceCase; //текст выводящий стоимость кейса
@@ -164,6 +167,7 @@ public class MenuManager : MonoBehaviour
     {
         canOpenRandomCase = false;
         openRandomCaseImage.fillAmount = 0;
+        openRandomCaseText.SetActive(false);
         float timer = 0f;
         while (timer < durationInSec)
         {
@@ -172,11 +176,13 @@ public class MenuManager : MonoBehaviour
             openRandomCaseImage.fillAmount = currentFillAmount;
             yield return null;
         }
+        openRandomCaseText.SetActive(true);
         canOpenRandomCase = true;
     }
 
     public void ExitCollectionButton(){ //при нажатии закрывается панель с коллекцией
         panelCollection.SetActive(false);
+        panelMoney.SetActive(true);
     }
 
     public void ExitTeacherPanelButton()
@@ -294,6 +300,7 @@ public class MenuManager : MonoBehaviour
     public void CollectionButton()
     { //при нажатии открывается панель с коллекцией
         panelCollection.SetActive(true);
+        panelMoney.SetActive(false);
         UpdateCardText();
     }
 }
